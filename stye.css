@@ -1,0 +1,411 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+  }
+  
+/*Flex display items start here*/
+
+  header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 5px;
+  }
+  
+  .logo {
+    cursor: pointer;
+    margin-right: auto;
+    max-width: 23%;
+  }
+  
+  .navLinks {
+    list-style: none;
+  }
+  
+  .navLinks li {
+    display: inline-block;
+    padding: 0px 15px;
+  }
+  
+  .navLinks li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .navLinks li a:hover {
+    text-decoration: underline;
+  }
+  
+  .navLinks li a:active {
+    border-bottom: 3px solid #ffc411;
+    text-decoration: none;
+  }
+  
+  #activeNav {
+   border-bottom: 3px solid #ffc411;
+   text-decoration: none;
+  }
+  
+  #activePressLink {
+    border-bottom: 3px solid #ffc411;
+    text-decoration: none;
+  }
+  
+  #search {
+    height: 20px;
+  }
+  
+  .heroImage {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    padding-bottom: 20px;
+    background-image: url("images/heroimage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .pressPagesMenu {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+  }
+  
+  .pressLinks li {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .pressLinks li a:hover {
+    text-decoration: underline;
+  }
+  
+  .pressLinks li a:active {
+    text-decoration: underline;
+    text-decoration-color: #ffc411;
+  }
+  
+  .pageTitleFilter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    margin-left: 20%;
+  }
+  
+  .title {
+    padding-right: 25px;
+  }
+  
+  .cardFilter {
+    cursor: pointer;
+  }
+
+  .containerFilter {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+ 
+
+  .accordionContainer {
+    display: flex;
+    height: 100px;
+    margin: 0px auto 25px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    padding: 10px;
+    margin: 0 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 25px;
+    background-color: #ffc411;
+  }
+
+  /*Another Interior Page Grid Display Constructed Here*/
+
+  .anotherInteriorPage {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: 'card'
+    'card'
+    'card'
+    'card'
+    'card'
+    'card'
+    'card'
+    'card'
+    'card'
+    'card';
+    grid-template-columns: 83%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  }
+  
+  .card {
+    display: flex;
+    margin: 0px 4px 20px 10%;
+    background-color: white;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 8px;
+  }
+  
+  .cardInfo {
+    padding: 20px;
+    justify-items: flex-start;
+  }
+  
+  .cardHeading {
+    padding-bottom: 20px;
+  }
+  
+  .cardSummary {
+    padding-bottom: 50px;
+    min-width: 100px;
+  }
+  
+  .cardButton {
+    border: none;
+    background-color: #ffc411;
+    padding: 15px 50px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 30px 0px 0px;
+    cursor: pointer;
+  }
+
+  /*CSS Simple Hover Interaction*/
+  
+  .cardButton:hover,
+  .cardButton:focus {
+    box-shadow: 0 4px 8px 0 gray;
+    color: black;
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+  }
+  
+  .cardPicture {
+    margin: 20px;
+    margin-left: auto;
+  }
+  
+  .footerContainer {
+    background-color: black;
+    padding-bottom: 4rem;
+  }
+  
+  .footer {
+    width: 95%;
+    height: 20px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .footerCategoryOne {
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  
+  .contact {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .contact a:hover {
+    color:#ffc411;
+  }
+  
+  .footerCategoryTwo {
+    margin-left: auto;
+    margin-top: 30px;
+  }
+  
+  .social {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+/*Media Query Sizing Begins Here*/
+
+  @media only screen and (max-width:600px) {
+    .anotherInteriorPage {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      grid-template-areas: 'card'
+      'card'
+      'card'
+      'card'
+      'card'
+      'card'
+      'card'
+      'card'
+      'card'
+      'card';
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    }
+
+
+    .card {
+      width: fit-content;
+      height: fit-content;
+    }
+    
+    .cardButton {
+      display: flex;
+      flex-wrap: wrap;
+      max-height: 50px;
+      max-width: 50px;
+      font-size: 14px;
+      justify-content: center;
+      align-content: center;
+    }
+  
+    .cardPicture {
+      width: fit-content;
+      height: fit-content;
+    }
+  
+    li, a {
+      font-size: 14px;
+    }
+  
+    .logo {
+      max-width: 20%;
+    }
+
+    .heroImage {
+      display: flex;
+      width: 100%;
+      height: 30vh;
+      padding-bottom: 20px;
+      background-image: url("images/heroimage.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .pageTitleFilter {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px;
+      margin-left: 5%;
+    }
+    
+  }
+  
+  @media only screen and (max-width:800px) and (min-width:601px) {
+    .anotherInteriorPage {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      grid-template-areas: 'card'
+      'card'
+      'card'
+      'card'
+      'card'
+      'card'
+      'card'
+      'card'
+      'card'
+      'card';
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    }
+
+
+    .card {
+      width: fit-content;
+      height: fit-content;
+    }
+    
+    .cardButton {
+      display: flex;
+      flex-wrap: wrap;
+      max-height: 50px;
+      max-width: 50px;
+      font-size: 14px;
+      justify-content: center;
+      align-content: center;
+    }
+  
+    .cardPicture {
+      width: fit-content;
+      height: fit-content;
+    }
+  
+    li, a {
+      font-size: 14px;
+    }
+  
+    .logo {
+      max-width: 20%;
+    }
+
+    .heroImage {
+      display: flex;
+      width: 100%;
+      height: 30vh;
+      padding-bottom: 20px;
+      background-image: url("images/heroimage.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .pageTitleFilter {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px;
+      margin-left: 5%;
+    }
+    
+  }
